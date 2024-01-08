@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script>
+        function join_name() {
+   
+       var fname=document.getElementById("fname").value;
+       var lname=document.getElementById("lname").value;
+       document.getElementById("form").innerHTML=fname+"  "+lname;
+        }
+   </script>
+</head>
+<body>
+    <FORM>
+        FIRST NAME: <input type="text" id="fname"><br>
+        LAST NAME: <input type="text" id="lname"><br>
+        <input type="button" value="display" onclick="join_name()">
+        </FORM>
+        <p id="form"></p>
+    
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform(){
+            var name=document.myform.name.value;
+            var password=document.myform.password.value;
+          var myfield=document.getElementById("mynumber");
+          var value=myfield.value;
+          if ( name==""){
+                alert("name can't be blank");
+                document.myform.name.focus();
+                return false
+            }else if(password.length<6){
+                alert("password must be 6 character long");
+                document.myform.password .focus();
+                return false;
+            }
+
+            else if (value=="" || isNaN(value) || value<0 || value>10 ){
+                alert("invalid input!");
+                myfield.focus();
+                return false;
+            }
+          
+                return true;
+            }
+        
+    </script>
+        <form name="myform" action="f1.html" onsubmit="return validateform()">
+            name:
+            <input type="text" name="name"><br>
+            password:
+            <input type="password" name="password" pattern="{8,}" title="8 or more characters"><br>
+       number:
+         <input type="text" id="mynumber"><br>
+        
+         <input type="submit"   value="register"> 
+
+        </form>
+
+</body>
+</html>
+
+

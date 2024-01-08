@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+
+    <title>Document</title>
+ </head>
+ <body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    let day;
+switch(new Date().getDay()){
+    case 0:
+        day="sunday";
+        break;
+     case 1:
+        day="monday";
+        break;
+    case 2:
+        day="tuesday";
+        break;
+     case 3:
+        day="wednesday";
+        break;
+     case 4:
+        day="thrusday";
+        break;
+    case 5:
+        day="friday";
+        break;
+    case 6:
+        day="saturday";
+    default:
+        day="holiday";
+}
+document.getElementById("demo").innerHTML="today is" +   day;
+
+const person={fname:"archi", lname:"agrawal", age:18};
+let txt="";
+for (let x in person){
+txt+=person[x] + "" ;
+}   
+document.getElementById("demo1").innerHTML=txt;
+
+let language="javascript";
+let text="";
+for (let x of language) {
+    text += x + "<br>";
+}
+document.getElementById("demo2").innerHTML= text;
+
+  </script>
+    
+ </body>
+ </html>
+
+
+
+
+

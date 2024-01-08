@@ -1,0 +1,56 @@
+<!--html forms-->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form >
+    <fieldset style="margin-right:1000px;">
+        <legend>Academic Information</legend>
+        Degree
+        <select name="degree" id="degree" >
+            <option value="b.tect">Master Of Business Administration</option>
+            <option value="BA">bachelor of arts</option>
+            <option value="B.COM">bachelor of commerce</option>
+            <option value="b.arch">bachelor of architecture</option>
+            <option value="b.des">bachelor of design</option>
+            <option value="bba">bachelor of technology</option>
+            <option value="llb">bachelor of laws</option>
+        </select>
+        <br>
+        <label for="studentid">Student ID</label>
+        <input type="password" name="studentid" /><br>
+        Classes Attended
+        <select name="classes attended" multiple SIZE="3">
+            <option value="value1">Geography</option>
+            <option value="value2">English</option>
+            <option value="value3">Hindi</option>
+            <option value="value4">History</option>
+            <option value="value5">Science</option>
+            <option value="value6">Maths</option>
+        </select>
+    </fieldset>
+    <fieldset style="margin-right:1000px;">
+        <legend>Personal Details</legend>
+        <label for="d1">First Name :</label>        
+        <input type="txt" name="fname" id="d1"><br>
+        <label for="d2">Last Name :</label>        
+        <input type="txt" name="lname"  id="d2"><br>
+        Gender:
+        <input name="gender" type="radio" id="gm" value="m" />
+        <label for="gm">Male</label>
+        <input name="gender" checked type="radio" id="gf" value="f" />
+        <label for="gm" >Female</label>
+        <input name="gender" type="radio" id="go" value="o" />
+        <label for="gm">Other</label><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+    </fieldset>
+    <p>
+        <textarea name="terms" cols="61" rows="4"
+        readonly="readonly">TERMS AND CONDITIONS...</textarea>
+        </p>
+        <p><input type="submit" name="submit" value="Send Form" />
+            <input type="reset" value="Clear Form" /></p>
+</form>
+</body>
+</html>
